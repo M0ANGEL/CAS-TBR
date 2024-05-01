@@ -21,7 +21,9 @@
         $db_nombre = "pruebas";     //4 
 
         $conexion=mysqli_connect($db_host,$db_usuario,$db_contra,$db_nombre); 
-        $consulta="select * from medica where codigo like'%$busqueda%'";
+        //$consulta="select * from medica where codigo like'%$busqueda%'";
+        $consulta="select * from medica where codigo ='$busqueda'";
+        echo "$consulta<br><br>";
         $resultado=mysqli_query($conexion,$consulta);
 
         while($fila=mysqli_fetch_row($resultado)){
