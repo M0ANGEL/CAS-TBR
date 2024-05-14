@@ -1,0 +1,26 @@
+#principal{
+    width: 500px;
+    background-color: aqua; /* color de fondo */
+    text-align: center; /* centrar texto */
+    margin: 15px auto; /* al tener el auto se centra siempre no importa el tamaño de la pagina */
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid rebeccapurple; /* para poner borde de color */
+    box-shadow: gray 25px 25px 15px; /* para sombrear el ultimp px es para difuminar */
+    
+    
+    
+
+}
+
+#principal:hover{
+    -webkit-transform: rotate(5deg); /* parar dar como anumacion de moviemiento */
+    background-color: beige;
+    
+}
+
+#titulo{
+    font:bold 35px verdana, sans-serif; /* tipos de letras */
+    /* text-shadow: blue 3px 3px 3px; para dar difuminacion al texto */
+    
+}

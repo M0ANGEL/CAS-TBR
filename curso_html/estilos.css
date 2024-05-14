@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(102, 114, 122);
+}
+
+#cabeceraweb{
+    background-color: aqua;
+    border-radius: 15px;
+    padding-left: 10px;
+    text-align: center;
+  
+}
+
+nav{
+    background-color: bisque;
+}
+
+#barralateral{
+    /* seria como barra de menu lateral */
+    background-color: rgb(255, 0, 13);
+    float: left;
+    height: 900px;
+}
+
+#principal{
+    background-color: blueviolet;
+    margin-left: 210px; /* bordes de afuera */
+    padding-left: 15px; /* margen de adentro */
+    padding-top: 15px;
+}
+
+
+#pieweb{
+
+    background-color: brown;
+    clear:both;
+    margin-top: 50px;
+}
+
+li{
+    background-color: aqua;
+    display: inline; /* para que las etiquetas no ocupen el 100% y se hagan en fila */
+}

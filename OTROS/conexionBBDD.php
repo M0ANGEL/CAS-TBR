@@ -1,31 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conexion</title>
-</head>
 
-<body>
+  <!-- echo 'Current PHP version: ' . phpversion(); vewr vesrion de php -->
 
-    <!-- echo 'Current PHP version: ' . phpversion(); vewr vesrion de php -->
-
-    <?php
+  <?php
 
     //la conexion de la base de datos esta en otro archivo
     //esto para no repetir mucho codigo, ahi esta el paso a pasao para conectar la BBDD
     
-    require("credencialesBBDD.php");
+    $server="localhost";
+    $user="anegl";
+    $pas="miguel";
+    $db="pruebas";
 
-    $conexion = mysqli_connect($ser,$use,$pas,$bd);//conectando base de datos
-
-
-    //para caracteres con acento
-    mysqli_set_charset($conexion, "utf8");
-
-
-
+    $conexion=mysqli_connect($server, $user, $pas, $db);
 
     //consulta
     //funcion para ejecutar consulta
@@ -105,6 +92,3 @@
 
   ?>
 
-</body>
-
-</html>

@@ -1,0 +1,83 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+
+/* fin reset */
+
+body{
+    font-size: 62.5%;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+h1{
+    font: normal 2.4em verdana;
+    background: linear-gradient( rgb(100, 154, 235), blue) ;
+    width: 35%;
+    border-radius: 15px;
+    text-align: center;
+    margin: 15px auto;
+    color: aliceblue;
+    padding:5px;
+    box-shadow: rgb(11, 201, 226) 5px 5px 10px;
+}
+
+h2{
+    font: bold 1.7em verdana;
+    margin: 0;
+    padding: 5px 0 5px 8px;
+    color: black;
+}
+
+section{
+    width: 70%;
+    border-top: 1px dashed gray; /* parar linea de - */
+    margin: 15px auto;
+}
+
+figure{
+    float: left;
+}
+
+figure img{
+    border-radius: 15px;
+    padding: 4px;
+    background: gray;
+    transition: 0.4s; /* para la aniumacios */
+}
+
+
+figure img:hover{
+    transform: scale(1.2); /* para al pasar el mouse la imgen cresca */
+}
+
+figcaption{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer{
+    clear:both;
+    padding-top: 100px;
+}
+
+footer p{
+    font:1.6em georgia;
+    color: gray;
+    margin: 15px 8px;
+
+}

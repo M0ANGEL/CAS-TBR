@@ -16,9 +16,9 @@
         $busqueda=$_GET["buscar"];
         
         $db_host = "localhost";      //1  
-        $db_usuario = "root";        //2 
-        $db_contra = "";             //3
-        $db_nombre = "pruebas";     //4 
+        $db_usuario = "admin";        //2 
+        $db_contra = "123456";             //3
+        $db_nombre = "ELbebeamngel";     //4 
 
         $conexion=mysqli_connect($db_host,$db_usuario,$db_contra,$db_nombre); 
         //$consulta="select * from medica where codigo like'%$busqueda%'";

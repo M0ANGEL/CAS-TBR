@@ -9,7 +9,7 @@
     
     <form action="consultas_preparadas.php" method="get">
 
-    <label>Codigo: <input type="text" name="codigo"></label><br>
+    <label>Codigo: <input type="text" name="codigo"></label>
     <input type="submit" name="enviando" value="buscar">
 
 
