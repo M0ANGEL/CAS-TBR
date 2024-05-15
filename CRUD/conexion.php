@@ -7,7 +7,7 @@ try{
 
     $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $base->exec("sect caracter set utf8");
+    $base->exec("set character set utf8");
 
 
 
