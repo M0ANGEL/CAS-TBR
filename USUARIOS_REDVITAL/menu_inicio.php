@@ -10,9 +10,9 @@
 </head>
 <body>
 
-    <?php
-
-
+   <?php
+    
+    
     //la variable session mira si se regsitro y lo deja pasar en caso no
     // lodevuelve a la pagina login
     session_start();
@@ -22,16 +22,64 @@
         header("location:login.php");
 
     }
-    ?>
-    
-    <h1>Creacion y manejos de permisos</h1>
-        
-   
 
-    <div class="usuarios">
-    <p class="usuario"><b>Bienvenid@:</b> <?php echo $_SESSION["usuario"];  ?></p>
-        <button class="cerrar"><a class="cerrarTx" href="cierre_sesion.php"><b>Cerrar sesion</b></a></button>
+    /* consulta para ver nombre del regente */
+
+
+
+
+
+    ?>
+     <!--------------------------------------barra menu----------------------- -->          
+    <header>
+        <div class="usuarios">
+            <p class="usuario"><b>Usuario:</b> <?php echo $_SESSION["usuario"];  ?></p> 
+
+        </div>
+
+        <label for="" class="icon"></label>
+        <h1>Creacion y manejos de permisos</h1>
+    </header>
+        
+    <!-- <input type="checkbox" id="btn-menu">
+     -->
+    <div id="container-menu" >
+        <div class="btn-ol"> <span>&#9776;</span></div>
+        <div class="cont-menu">
+            
+            <nav>
+                <a class="cerrarTx" href="cierre_sesion.php"><b>Cerrar sesion</b></a>
+                <a class="cerrarTx" href=""><b>Usuarios pendientes</b></a>
+                <a class="cerrarTx" href=""><b>Solicitud por area</b></a>
+                <?php
+                    if($_SESSION["usuario"]=="admin"){
+                    echo "<a class='cerrarTx' href='formulario_nuevos_regentes.php'><b>Nuevos regentes</b></a><br>";
+                    echo "<a class='cerrarTx' href='formulario_registro_qf.php'><b>Nuevos QF</b></a>";
+                    };
+                    ?>
+                <a class="cerrarTx" href=""><b>##</b></a>
+                <a class="cerrarTx" href=""><b>##</b></a>
+                <a class="cerrarTx" href=""><b>##</b></a>
+            </nav>
+            
+        </div>
     </div>
+
+    <!-- -------------------------------fin barra menu--------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
     
 
 
@@ -46,7 +94,7 @@
             <button class="boton1"><a href="crear_usuario.php">CREAR</a></button>
         </div>
 
-        <div class="box1">
+        <div class="box">
         <h4>CAMBIO DE BODEGAS</h4>
             <hr>
             <p>para solicitar cambio de bodega 
@@ -68,11 +116,11 @@
         </div>
     </div>
 
-    <?php
-        if($_SESSION["usuario"]=="admin"){
-            echo "<a href='formulario_nuevos_regentes.php'>NUEVOS USUARIOS</a>";
-        };
-    ?>
+  
 
+
+
+
+        <script src="menu.js"></script>
 </body>
 </html>

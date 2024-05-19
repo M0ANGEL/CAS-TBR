@@ -31,7 +31,7 @@ try{
 
     //consulata
     $sql = "insert into usuarios_crear(cedula, nombre, apellido, bodega, cargo, telefono,servinte_clonar, cedula_clonar,sebthi_clonar) values 
-    (:cedula, :nombre, :apellido, :bodega, :cargo, :telefono, :servinte, :cedula, :sebthi)"; /* (:)es para marcador */
+    (:cedula, :nombre, :apellido, :bodega, :cargo, :telefono, :servinte, :cedula1, :sebthi)"; /* (:)es para marcador */
 
     
     //se prepara la ocnsulta
@@ -39,8 +39,8 @@ try{
     
     
     //se ejecuta la ocnsulata guardada en sql
-    $resultado->execute(array(":cedula"=>$cedula_clonar,":nombre"=>$nombre,":apellido"=>$apellido,":bodega"=>$bodega,":cargo"=>$cargo,
-    ":telefono"=>$telefono ,":servinte"=>$servinte_clonar,":sebthi"=>$sebthi_clonar));
+    $resultado->execute(array(":cedula"=>$cedula,":nombre"=>$nombre,":apellido"=>$apellido,":bodega"=>$bodega,":cargo"=>$cargo,
+    ":telefono"=>$telefono ,":servinte"=>$servinte_clonar,":cedula1"=>$cedula_clonar,":sebthi"=>$sebthi_clonar));
     echo "tes";
     header("location: crear_usuario.php");
     

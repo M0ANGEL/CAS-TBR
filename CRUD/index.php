@@ -89,6 +89,7 @@
           
           
           <td class='bot'><a href="crud_actualizar.php?id=<?php echo $persona->id?> & nombre=<?php echo $persona->nombre?> & apellido=<?php echo $persona->apellido?> & cedula=<?php echo $persona->cedula?>"><input type='button' name='up' id='up' value='Actualizar'></a>
+          
         </td>
 
 

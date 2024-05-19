@@ -16,7 +16,7 @@
 
     if(!isset($_SESSION["usuario"])){
 
-        header("location:login.php");
+        header("location:solicitudes.php");
 
     }
     ?>

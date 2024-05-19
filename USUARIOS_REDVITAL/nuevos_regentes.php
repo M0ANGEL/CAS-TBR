@@ -6,6 +6,7 @@
 $nombre=$_POST["nombre"];
 $apellido=$_POST["apellido"];
 $cedula=$_POST["cedula"];
+$bodega=$_POST["bodega"];
 $usua=$_POST["usuario"];
 $contra=$_POST["contra"];
 
@@ -28,13 +29,13 @@ try{
     //ok
 
     //consulata
-    $sql = "insert into registro_usuario (nombre, apellido, cedula, usuario, contra) values (:nombre, :apellido, :cedula, :usuario ,:contra)"; /* (:)es para marcador */
+    $sql = "insert into registro_usuario(nombre, apellido, cedula, bodega, usuario, contra) values (:nombre, :apellido, :cedula,:bodega, :usuario ,:contra)"; /* (:)es para marcador */
 
     //se prepara la ocnsulta
     $resultado=$base->prepare($sql);
 
     //se ejecuta la ocnsulata guardada en sql
-    $resultado->execute(array(":nombre"=>$nombre,":apellido"=>$apellido,":cedula"=>$cedula,":usuario"=>$usua,":contra"=>$pass_cifrado));
+    $resultado->execute(array(":nombre"=>$nombre,":apellido"=>$apellido,":cedula"=>$cedula,":bodega"=>$bodega,":usuario"=>$usua,":contra"=>$pass_cifrado));
 
     
     //cerrar tabla virtual

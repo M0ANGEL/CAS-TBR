@@ -30,8 +30,9 @@ if(!isset($_SESSION["usuario"])){
             <form class="login-form" action="nuevos_regentes.php" method="post">
 
                 <input type="text"  name="nombre" placeholder="nombre"/>
-                <input type="text" name="apelldio" placeholder="apellido"/>
+                <input type="text" name="apellido" placeholder="apellido"/>
                 <input type="text"  name="cedula" placeholder="cedula sin (.)"/>
+                <input type="text"  name="bodega" placeholder="Regente de bodega:"/>
                 <input type="text"  name="usuario" placeholder="usuario"/>
                 <input type="password"  name="contra" placeholder="contraseña"/>
                 <input type="submit" name="enviar" value="CREAR" id="enviar">

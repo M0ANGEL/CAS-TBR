@@ -7,7 +7,7 @@
     <title>Login</title>
 </head>
 <body>
-
+    <h1><b>sol</b></h1>
 
     <div class="login-page">
         <div class="form">

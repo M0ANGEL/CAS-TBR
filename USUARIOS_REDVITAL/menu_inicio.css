@@ -7,12 +7,8 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;  
     background-color:#3498DB ;    
-    
-    
-   
+  
 }
-
-
 
 
 h1{
@@ -30,6 +26,67 @@ h1{
    
 }
 
+/*menu latera*/
+
+
+
+
+
+#container-menu{
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background: #1c1c1c;
+    left: -200px;
+    transition: all 400ms linear;
+    
+    
+}
+
+#container-menu.active{
+    left: 0;
+    
+}
+
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #868585;
+}
+
+.btn-ol{
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    cursor: pointer;
+    
+
+}
+
+#container-menu .btn-ol span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid wheat;
+    border-radius: 10px;
+   
+    
+
+}
+
+/*---------------------------------------------------------------------*/
+
+
 .usuario{
  
     margin: 0, 15px, 20px, 800px;
@@ -37,14 +94,18 @@ h1{
     text-align: right;
     margin-right: 15px;
     font-size: 25px;
+    float: left;
+    margin-left:20px ;
+    margin-top: 10px;
+    color: #f2f2f2;
+    
   
-
 
 }
 
 
 
-.cerrar{
+/* .cerrar{
     float: right;
     height: 35px;
     margin-top: 5px;
@@ -55,7 +116,7 @@ h1{
     border-radius: 10px;
     
     
-}
+} */
 
 .cerrarTx{
     color: white;
@@ -134,8 +195,8 @@ button:hover{
 
 .box{
     float: left;
-    margin-right: 100px;
-    margin-left: 150px;
+    margin-right: 20px;
+    margin-left: 243px;
     margin-top: 50px;
     width:270px;
     height: 350px;
@@ -143,23 +204,11 @@ button:hover{
     background-color:#f2f2f2 ;
     padding: 1em;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.60), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    position: initial;
     
     
 }
-.box1{
-    float: left;
-    margin-right: 100px;
-    margin-left: 150px;
-    margin-top: 50px;
-    width:270px;
-    height: 350px;
-    border-radius: 15px;
-    background-color:#f2f2f2 ;
-    padding: 1em;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.60), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    
-    
-}
+
 
 
 
