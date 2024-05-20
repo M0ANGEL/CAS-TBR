@@ -55,16 +55,10 @@ $resultado=$base->query("select * from usuarios_crear where confirmar=0")->fetch
             <nav>
                 <a class="cerrarTx" href="cierre_sesion.php"><b>Cerrar sesion</b></a>
                 <a class="cerrarTx" href=""><b>Usuarios pendientes</b></a>
-                <a class="cerrarTx" href=""><b>Solicitud por area</b></a>
-                <?php
-                    if($_SESSION["usuario"]=="admin"){
-                    echo "<a class='cerrarTx' href='formulario_nuevos_regentes.php'><b>Nuevos regentes</b></a><br>";
-                    echo "<a class='cerrarTx' href='formulario_registro_qf.php'><b>Nuevos QF</b></a>";
-                    };
-                    ?>
+                <a id="btn-ca" class="cerrarTx" href=""><b>Solicitud por area</b></a>
                 <a class="cerrarTx" href=""><b>##</b></a>
                 <a class="cerrarTx" href=""><b>##</b></a>
-                <a class="cerrarTx" href=""><b>Cambiar contraseña</b></a>
+                <a id="btn-ca" class="cerrarTx" onclick="cambio();"><b>Cambiar contraseña</b></a>
             </nav>
             
         </div>
@@ -73,8 +67,9 @@ $resultado=$base->query("select * from usuarios_crear where confirmar=0")->fetch
     <!-- ----------------------------------barra menu------------------------------ -->
 
 
+<div id="tabla_usu">
 <form  action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
-    <table>
+    <table  >
             <!-- aqui tenemos los nombres de arriba nombre cedula ETC -->
             <tr >
                 <td class="primera_fila"></td>
@@ -124,7 +119,27 @@ $resultado=$base->query("select * from usuarios_crear where confirmar=0")->fetch
     </table>
 </form>
 
+</div>
 
-<script src="menu.js"></script>
+
+
+<!-- /*----------------------------------cambio contra---------------------------------------- -->
+
+    <div id="cambio_contra">
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form" action="validacion_login.php" method="post">
+
+                <input type="text"  name="contra" placeholder="CONTRASEÑA"/>
+                <input type="password" name="contra_nueva" placeholder="CONTRASEÑA NUEVA"/>
+                <input type="submit" name="enviar" value="CAMBIAR" id="enviar">
+            
+            </form>
+        </div>
+   </div>
+    </div>
+
+
+<script src="qf.js"></script>
 </body>
 </html>
